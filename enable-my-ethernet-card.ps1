@@ -1,0 +1,1 @@
+enable-netadapter -confirm:$false -name "ethernet 3"
