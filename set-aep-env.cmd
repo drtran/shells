@@ -5,6 +5,13 @@ REM REQUIRED 64-bit Windows
 REM
 REM Kiet T. Tran, Ph.D. 2013-2018
 REM
+REM --- to use goland effectively & efficiently, consider setting these
+REM --- environment variables for your OS.
+REM 
+REM GOBIN=C:\csd-work\go-code\bin
+REM GOPATH=C:\csd-work\go-code
+REM GO_ROOT=C:\csd-work\bin\go
+REM 
 
 SET CSD_WORK=C:\csd-work
 SET CSD_BIN=%CSD_WORK%\bin
@@ -35,6 +42,10 @@ SET PATH=%PATH%;%GRADLE_HOME%\bin
 
 REM **** SONARQUBE ****
 SET SONARQUBE_HOME=%CSD_BIN%\sonarqube-6.6
+
+REM **** JRUBY ****
+SET JRUBY_HOME=%CSD_BIN%\jruby-9.1.16.0
+SET PATH=%PATH%;%JRUBY_HOME%\bin
 
 SET PATH=%PATH%;%CSD_BIN%\misc
 SET PATH=%PATH%;%CSD_BIN%\minishift
